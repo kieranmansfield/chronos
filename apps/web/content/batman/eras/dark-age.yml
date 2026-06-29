@@ -1,0 +1,11 @@
+id: dark-age
+franchiseId: batman
+name: Dark Age
+startYear: 1986
+endYear: 1999
+continuityIds:
+  - post-crisis
+description: >
+  The gritty, psychological era defined by Miller, Moore, and O'Neil.
+  Begins with The Dark Knight Returns and Year One; includes the deaths of
+  Jason Todd and Barbara Gordon's paralyzing.

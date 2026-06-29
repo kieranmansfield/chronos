@@ -1,0 +1,15 @@
+id: the-killing-joke
+franchiseId: batman
+title: "Batman: The Killing Joke"
+formFactor: graphic-novel
+medium: comics
+continuityIds:
+  - post-crisis
+publishedYear: 1988
+writers:
+  - Alan Moore
+artists:
+  - Brian Bolland
+storyConceptIds:
+  - joker-origin
+  - barbara-gordon-paralyzed

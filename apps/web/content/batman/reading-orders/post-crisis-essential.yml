@@ -1,0 +1,97 @@
+id: post-crisis-essential
+franchiseId: batman
+title: Post-Crisis Batman — Essential Reading
+description: >
+  The definitive Post-Crisis Batman reading order. Starts with the
+  foundational texts and builds through the key story arcs that define
+  the era. Essential entries only — add recommended/optional tiers for a
+  deeper dive.
+continuityIds:
+  - post-crisis
+defaultMode: publication
+source: curated
+blocks:
+  - type: annotation
+    annotationKind: note
+    title: Before you start
+    body: >
+      The Dark Knight Returns (1986) was published before Crisis on Infinite
+      Earths but is set in a possible future outside main continuity. Read it
+      first for historical context, then treat it as Elseworlds.
+    order: 1
+
+  - type: marker
+    markerKind: era
+    label: Dark Age (1986–1999)
+    order: 2
+
+  - type: work
+    workId: the-dark-knight-returns
+    importance: essential
+    canonStatus: alternate
+    order: 3
+
+  - type: work
+    workId: batman-year-one
+    importance: essential
+    canonStatus: canon
+    order: 4
+
+  - type: marker
+    markerKind: milestone
+    label: Joker paralyzes Barbara Gordon
+    order: 5
+
+  - type: work
+    workId: the-killing-joke
+    importance: essential
+    canonStatus: semi-canon
+    order: 6
+
+  - type: annotation
+    annotationKind: continuity
+    body: >
+      The Killing Joke's canonicity is debated — Grant Morrison suggested it
+      was a dream. DC has treated it as semi-canonical ever since.
+    relatedWorkIds:
+      - the-killing-joke
+    order: 7
+
+  - type: marker
+    markerKind: milestone
+    label: Jason Todd dies — readers voted
+    order: 8
+
+  - type: work
+    workId: a-death-in-the-family
+    importance: essential
+    canonStatus: canon
+    order: 9
+
+  - type: work
+    workId: knightfall
+    importance: essential
+    canonStatus: canon
+    order: 10
+
+  - type: marker
+    markerKind: era
+    label: Modern Age (2000–2011)
+    order: 11
+
+  - type: work
+    workId: hush
+    importance: recommended
+    canonStatus: canon
+    order: 12
+
+  - type: marker
+    markerKind: milestone
+    label: Jason Todd returns as Red Hood
+    order: 13
+
+  - type: work
+    workId: under-the-hood
+    importance: essential
+    canonStatus: canon
+    order: 14

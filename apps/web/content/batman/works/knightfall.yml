@@ -1,0 +1,18 @@
+id: knightfall
+franchiseId: batman
+title: "Batman: Knightfall"
+formFactor: arc
+medium: comics
+continuityIds:
+  - post-crisis
+publishedYear: 1993
+writers:
+  - Doug Moench
+  - Chuck Dixon
+  - Alan Grant
+artists:
+  - Jim Aparo
+  - Norm Breyfogle
+storyConceptIds:
+  - bane-breaks-batman
+  - azrael-batman

@@ -1,0 +1,15 @@
+id: hush
+franchiseId: batman
+title: "Batman: Hush"
+formFactor: arc
+medium: comics
+seriesTitle: Batman
+continuityIds:
+  - post-crisis
+publishedYear: 2002
+writers:
+  - Jeph Loeb
+artists:
+  - Jim Lee
+storyConceptIds:
+  - hush-villain

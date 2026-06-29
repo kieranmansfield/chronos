@@ -1,0 +1,16 @@
+id: under-the-hood
+franchiseId: batman
+title: "Batman: Under the Hood"
+formFactor: arc
+medium: comics
+seriesTitle: Batman
+continuityIds:
+  - post-crisis
+publishedYear: 2004
+writers:
+  - Judd Winick
+artists:
+  - Doug Mahnke
+  - Paul Lee
+storyConceptIds:
+  - jason-todd-returns

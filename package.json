@@ -29,6 +29,8 @@
     "lint:sync": "git remote get-url tooling-config 2>/dev/null || git remote add tooling-config https://github.com/kieranmansfield/tooling-config.git && git fetch tooling-config && git checkout tooling-config/main -- .editorconfig eslint.config.mjs prettier.config.cjs .prettierignore stylelint.config.mjs"
   },
   "devDependencies": {
-    "prettier": "^3.8.4"
+    "prettier": "^3.8.4",
+    "@vue/eslint-config-typescript": "^14.9.0",
+    "eslint-plugin-pnpm": "^1.6.1"
   }
 }

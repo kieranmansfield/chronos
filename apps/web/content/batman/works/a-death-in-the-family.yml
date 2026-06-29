@@ -1,0 +1,15 @@
+id: a-death-in-the-family
+franchiseId: batman
+title: "Batman: A Death in the Family"
+formFactor: arc
+medium: comics
+seriesTitle: Batman
+continuityIds:
+  - post-crisis
+publishedYear: 1988
+writers:
+  - Jim Starlin
+artists:
+  - Jim Aparo
+storyConceptIds:
+  - jason-todd-death

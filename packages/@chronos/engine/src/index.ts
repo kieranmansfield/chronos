@@ -75,6 +75,59 @@ export type Continuity = {
   description?: string
 }
 
+export type StoryConcept = {
+  id: string
+  franchiseId: string
+  title: string
+  description?: string
+  labels?: StoryLabel[]
+}
+
+export type Era = {
+  id: string
+  franchiseId: string
+  name: string
+  description?: string
+  startYear?: number
+  endYear?: number
+  continuityIds?: string[]
+}
+
+export type TimelineYear = {
+  franchiseId: string
+  year: number
+  label?: string
+  eraId?: string
+}
+
+export type Milestone = {
+  id: string
+  franchiseId: string
+  label: string
+  description?: string
+  year?: number
+  eraId?: string
+}
+
+export type RelationshipKind =
+  | 'sequel' | 'prequel' | 'tie-in' | 'crossover' | 'adaptation' | 'retelling' | 'spin-off'
+
+export type Relationship = {
+  id: string
+  franchiseId: string
+  fromWorkId: string
+  toWorkId: string
+  kind: RelationshipKind
+  description?: string
+}
+
+export type Coverage = {
+  orderId: string
+  franchiseId: string
+  workIds: string[]
+  storySegmentIds: string[]
+}
+
 export type ReadingOrderMode =
   | 'chronological' | 'publication' | 'recommended' | 'trade-first' | 'issue-by-issue'
 
@@ -113,6 +166,11 @@ export type Catalogue = {
   works: Work[]
   storySegments: StorySegment[]
   continuities: Continuity[]
+  storyConcepts: StoryConcept[]
+  eras: Era[]
+  timelineYears: TimelineYear[]
+  milestones: Milestone[]
+  relationships: Relationship[]
 }
 
 export type PlanFilters = {

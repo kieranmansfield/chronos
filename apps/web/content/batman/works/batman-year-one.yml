@@ -1,0 +1,16 @@
+id: batman-year-one
+franchiseId: batman
+title: "Batman: Year One"
+formFactor: arc
+medium: comics
+seriesTitle: Batman
+continuityIds:
+  - post-crisis
+publishedYear: 1987
+writers:
+  - Frank Miller
+artists:
+  - David Mazzucchelli
+storyConceptIds:
+  - batman-origin
+  - gordon-corruption

@@ -1,0 +1,15 @@
+id: the-dark-knight-returns
+franchiseId: batman
+title: "Batman: The Dark Knight Returns"
+formFactor: graphic-novel
+medium: comics
+publishedYear: 1986
+writers:
+  - Frank Miller
+artists:
+  - Frank Miller
+  - Klaus Janson
+labels:
+  - id: elseworlds
+    label: Elseworlds
+    color: "#6366f1"
