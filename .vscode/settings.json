@@ -107,12 +107,6 @@
 	"js/ts.updateImportsOnFileMove.enabled": "always",
 	"js/ts.format.enabled": true,
 
-	// HTML VALIDATE
-	"html-validate.configFile": ".htmlvalidate.json",
-
-	// HTMLHINT
-	"htmlhint.documentSelector": ["html", "vue"],
-
 	// NUXTR
 	"nuxtr.defaultPackageManager": "NPM",
 	"nuxtr.vueFiles.script.type": "normal",
