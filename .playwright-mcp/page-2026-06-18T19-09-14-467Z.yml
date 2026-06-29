@@ -1,0 +1,170 @@
+- main [ref=e4]:
+    - generic [ref=e6]:
+        - navigation [ref=e8]:
+            - list [ref=e9]:
+                - listitem [ref=e10]:
+                    - link "Home" [ref=e11] [cursor=pointer]:
+                        - /url: /
+            - list [ref=e12]:
+                - listitem [ref=e13]:
+                    - link "Contact" [ref=e14] [cursor=pointer]:
+                        - /url: /contact
+        - generic [ref=e16]:
+            - button [ref=e17]
+            - generic [ref=e25]:
+                - button [ref=e26]
+                - generic [ref=e28]:
+                    - paragraph [ref=e29]: blah blah blah.
+                    - paragraph [ref=e30]: blah blah blah.
+                    - paragraph [ref=e31]: blah blah blah.
+                    - paragraph [ref=e32]: blah blah blah.
+                    - paragraph [ref=e33]: blah blah blah.
+    - generic [ref=e34]:
+        - generic [ref=e36]:
+            - generic [ref=e37]: kmcom-nuxt-layers
+            - heading "Nuxt Layer Architecture" [level=1] [ref=e39]
+            - paragraph [ref=e40]: A production-ready starter template built on composable Nuxt layers. Ship faster with pre-built typography, layout, motion, and form systems.
+            - generic [ref=e41]:
+                - link "Design System" [ref=e42] [cursor=pointer]:
+                    - /url: /design-system
+                    - text: Design System
+                - link "View on GitHub" [ref=e45] [cursor=pointer]:
+                    - /url: https://github.com/kieranmansfield/starter-template
+                    - text: View on GitHub
+        - generic [ref=e49]:
+            - generic [ref=e50]: Core
+            - generic [ref=e51]: ◆
+            - generic [ref=e52]: UI
+            - generic [ref=e53]: ◆
+            - generic [ref=e54]: Layout
+            - generic [ref=e55]: ◆
+            - generic [ref=e56]: Motion
+            - generic [ref=e57]: ◆
+            - generic [ref=e58]: Forms
+            - generic [ref=e59]: ◆
+            - generic [ref=e60]: Theme
+            - generic [ref=e61]: ◆
+            - generic [ref=e62]: Content
+            - generic [ref=e63]: ◆
+            - generic [ref=e64]: Core
+            - generic [ref=e65]: ◆
+            - generic [ref=e66]: UI
+            - generic [ref=e67]: ◆
+            - generic [ref=e68]: Layout
+            - generic [ref=e69]: ◆
+            - generic [ref=e70]: Motion
+            - generic [ref=e71]: ◆
+            - generic [ref=e72]: Forms
+            - generic [ref=e73]: ◆
+            - generic [ref=e74]: Theme
+            - generic [ref=e75]: ◆
+            - generic [ref=e76]: Content
+            - generic [ref=e77]: ◆
+        - generic [ref=e79]:
+            - generic [ref=e80]:
+                - generic [ref=e82]:
+                    - generic [ref=e87]:
+                        - heading "Core" [level=2] [ref=e88]
+                        - generic [ref=e89]: Active
+                    - paragraph [ref=e90]: Foundation utilities, error handling, device detection, PWA support
+                    - generic [ref=e91]:
+                        - generic [ref=e92]: Browser Detection
+                        - generic [ref=e93]: Screen Info
+                        - generic [ref=e94]: Network Status
+                        - generic [ref=e95]: Feature Detection
+                        - generic [ref=e96]: Loading States
+                        - generic [ref=e97]: PWA Support
+                - generic [ref=e100]:
+                    - generic [ref=e105]:
+                        - heading "UI" [level=2] [ref=e106]
+                        - generic [ref=e107]: Active
+                    - paragraph [ref=e108]: Typography, colors, responsive media components
+                    - generic [ref=e109]:
+                        - generic [ref=e110]: Typography System
+                        - generic [ref=e111]: Color Tokens
+                        - generic [ref=e112]: Responsive Images
+                        - generic [ref=e113]: Headline Components
+                        - generic [ref=e114]: Code Blocks
+                - generic [ref=e117]:
+                    - generic [ref=e122]:
+                        - heading "Layout" [level=2] [ref=e123]
+                        - generic [ref=e124]: Active
+                    - paragraph [ref=e125]: Swiss Grid system, sections, and page components
+                    - generic [ref=e126]:
+                        - generic [ref=e127]: 18-Column Grid
+                        - generic [ref=e128]: Hero Section
+                        - generic [ref=e129]: Split Section
+                        - generic [ref=e130]: Gallery Section
+                        - generic [ref=e131]: Page Container
+                        - generic [ref=e132]: Grid Debug
+                - generic [ref=e135]:
+                    - generic [ref=e140]:
+                        - heading "Motion" [level=2] [ref=e141]
+                        - generic [ref=e142]: Active
+                    - paragraph [ref=e143]: Animations, smooth scrolling, and transition effects
+                    - generic [ref=e144]:
+                        - generic [ref=e145]: GSAP
+                        - generic [ref=e146]: ScrollTrigger
+                        - generic [ref=e147]: Locomotive Scroll v5
+                        - generic [ref=e148]: v-gsap-nuxt
+                        - generic [ref=e149]: TextReveal
+                        - generic [ref=e150]: Parallax
+                        - generic [ref=e151]: Marquee
+                        - generic [ref=e152]: VelocityEffect
+                        - generic [ref=e153]: ScrollProgress
+                        - generic [ref=e154]: HorizontalScroll
+                        - generic [ref=e155]: Staggered
+                - generic [ref=e158]:
+                    - generic [ref=e163]:
+                        - heading "Forms" [level=2] [ref=e164]
+                        - generic [ref=e165]: Active
+                    - paragraph [ref=e166]: Config-driven form fields with Zod validation
+                    - generic [ref=e167]:
+                        - generic [ref=e168]: Dynamic Fields
+                        - generic [ref=e169]: Zod Validation
+                        - generic [ref=e170]: Type Inference
+                        - generic [ref=e171]: Auto Icons
+                        - generic [ref=e172]: Input Modes
+                        - generic [ref=e173]: Contact Form
+                - generic [ref=e176]:
+                    - generic [ref=e181]:
+                        - heading "Theme" [level=2] [ref=e182]
+                        - generic [ref=e183]: Active
+                    - paragraph [ref=e184]: Config-driven theme system with Tailwind CSS
+                    - generic [ref=e185]:
+                        - generic [ref=e186]: Dark Mode
+                        - generic [ref=e187]: Accent Colors
+                        - generic [ref=e188]: Color Themes
+                - generic [ref=e191]:
+                    - generic [ref=e196]:
+                        - heading "Shader" [level=2] [ref=e197]
+                        - generic [ref=e198]: Optional
+                    - paragraph [ref=e199]: WebGL/WebGPU shaders with TSL and TresJS
+                    - generic [ref=e200]:
+                        - generic [ref=e201]: TSL Shaders
+                        - generic [ref=e202]: Noise Functions
+                        - generic [ref=e203]: Gradient Materials
+                        - generic [ref=e204]: Fresnel Effects
+                        - generic [ref=e205]: Post-Processing
+                        - generic [ref=e206]: WebGPU Support
+                    - button "Coming Soon" [disabled] [ref=e208]
+                - generic [ref=e210]:
+                    - generic [ref=e215]:
+                        - heading "Content" [level=2] [ref=e216]
+                        - generic [ref=e217]: Active
+                    - paragraph [ref=e218]: Config-driven content management using Nuxt Content
+                    - generic [ref=e219]:
+                        - generic [ref=e220]: Markdown
+                        - generic [ref=e221]: Content Collections
+                        - generic [ref=e222]: Frontmatter
+                        - generic [ref=e223]: Content API
+                        - generic [ref=e224]: Zod Schemas
+            - generic [ref=e226]:
+                - link "Design System Reference" [ref=e227] [cursor=pointer]:
+                    - /url: /design-system
+                    - text: Design System Reference
+                - link "View Source" [ref=e229] [cursor=pointer]:
+                    - /url: https://github.com/kieranmansfield/starter-template
+                    - text: View Source
+    - button [ref=e233]:
+        - img [ref=e234]

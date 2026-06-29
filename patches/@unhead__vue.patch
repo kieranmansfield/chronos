@@ -1,0 +1,26 @@
+diff --git a/dist/shared/vue.Cr7xSEtD.mjs b/dist/shared/vue.Cr7xSEtD.mjs
+index e53e6d3b009e0f47c70bd744ab2450b9a2a304ff..6db72db587e7c49136f7dc302a06ea351e1ccda9 100644
+--- a/dist/shared/vue.Cr7xSEtD.mjs
++++ b/dist/shared/vue.Cr7xSEtD.mjs
+@@ -11,6 +11,9 @@ function vueInstall(head) {
+       app.config.globalProperties.$unhead = head;
+       app.config.globalProperties.$head = head;
+       app.provide(headSymbol, head);
++      // Store globally so injectHead() can fall back when Vue inject context is
++      // unavailable (e.g. inside Nuxt plugin setup() functions).
++      if (typeof globalThis !== 'undefined') globalThis.__unhead__ = head;
+     }
+   };
+   return plugin.install;
+@@ -24,6 +27,11 @@ function injectHead() {
+       return instance;
+     }
+   }
++  // Fall back to the globally stored instance for Nuxt plugin setup() contexts
++  // where Vue's inject is unavailable but the head has already been installed.
++  if (typeof globalThis !== 'undefined' && globalThis.__unhead__) {
++    return globalThis.__unhead__;
++  }
+   throw new Error("useHead() was called without provide context, ensure you call it through the setup() function.");
+ }
+ function useHead(input, options = {}) {

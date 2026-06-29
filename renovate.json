@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>danielroe/renovate"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "automergeType": "pr",
+      "automergeStrategy": "squash"
+    },
+    {
+      "groupName": "Linting & formatting",
+      "matchPackageNames": ["eslint", "stylelint", "prettier"],
+      "matchPackagePatterns": ["^@typescript-eslint/", "^eslint-", "^stylelint-", "^prettier-"]
+    },
+    {
+      "groupName": "TypeScript",
+      "matchPackageNames": ["typescript", "vue-tsc", "@types/node"]
+    }
+  ]
+}

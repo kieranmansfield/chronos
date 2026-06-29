@@ -1,0 +1,229 @@
+{
+	// WINDOW
+	"window.autoDetectColorScheme": true,
+	"window.systemColorTheme": "auto",
+	"window.nativeTabs": true,
+
+	// WORKBENCH
+	// "workbench.iconTheme": "material-icon-theme",
+	"workbench.settings.openDefaultKeybindings": true,
+	"workbench.colorTheme": "GitHub Light Default",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.preferredDarkColorTheme": "GitHub Dark Colorblind (Beta)",
+	"workbench.preferredHighContrastColorTheme": "GitHub Dark High Contrast",
+	"workbench.preferredHighContrastLightColorTheme": "GitHub Light High Contrast",
+	"workbench.preferredLightColorTheme": "GitHub Light Colorblind (Beta)",
+	"workbench.productIconTheme": "material-product-icons",
+	"workbench.sideBar.location": "right",
+	"workbench.secondarySideBar.defaultVisibility": "hidden",
+	"workbench.commandPalette.experimental.suggestCommands": true,
+	"workbench.externalBrowser": "chrome",
+
+	// telemetry
+	"telemetry.enableTelemetry": true,
+	"telemetry.telemetryLevel": "off",
+	"telemetry.editStats.details.enabled": false,
+	"telemetry.editStats.enabled": false,
+	"telemetry.feedback.enabled": false,
+
+	// EDITOR
+	"editor.fontSize": 17,
+	"editor.tabSize": 2,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.minimap.enabled": false,
+	"editor.wordWrap": "on",
+	"editor.formatOnSave": true,
+	"editor.guides.bracketPairs": true,
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"editor.inlayHints.enabled": "off",
+	"editor.accessibilitySupport": "off",
+	"editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+	"editor.fontLigatures": true,
+
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": "keyword.other.dotenv",
+				"settings": {
+					"foreground": "#FF000000"
+				}
+			}
+		]
+	},
+
+	// Files
+	"files.autoSave": "afterDelay",
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"files.associations": {
+		"*.page-template": "vue",
+		"*.layout-template": "vue",
+		"*.vue": "vue",
+		"*.css": "tailwindcss",
+		"*.scss": "tailwindcss",
+		".env*": "dotenv"
+	},
+
+	// UPDATE
+	"update.showReleaseNotes": true,
+
+	// GIT
+	"git.openRepositoryInParentFolders": "never",
+	"git.enableSmartCommit": true,
+	"git.confirmSync": true,
+
+	// LANGUAGES & PLUGINS
+
+	// PRETTIER
+	"prettier.useTabs": true,
+	"prettier.vueIndentScriptAndStyle": true,
+	"prettier.semi": false,
+	"prettier.jsxSingleQuote": true,
+	"prettier.singleQuote": true,
+	"prettier.singleAttributePerLine": true,
+	"prettier.bracketSameLine": true,
+
+	// TAILWIND CSS
+	"tailwindCSS.emmetCompletions": true,
+
+	// ES LINT
+	"eslint.alwaysShowStatus": true,
+	"eslint.useFlatConfig": true,
+	"eslint.validate": [
+		"javascript",
+		// "javascriptreact",
+		"typescript"
+		// "typescriptreact"
+	],
+
+	// CSS
+	"css.validate": false,
+
+	// JAVASCRIPT & TYPESCRIPT
+	"js/ts.updateImportsOnFileMove.enabled": "always",
+	"js/ts.format.enabled": true,
+
+	// HTML VALIDATE
+	"html-validate.configFile": ".htmlvalidate.json",
+
+	// HTMLHINT
+	"htmlhint.documentSelector": ["html", "vue"],
+
+	// NUXTR
+	"nuxtr.defaultPackageManager": "NPM",
+	"nuxtr.vueFiles.script.type": "normal",
+	"nuxtr.vueFiles.style.addStyleTag": false,
+	"nuxtr.vueFiles.style.alwaysScoped": true,
+	"nuxtr.vueFiles.firstTag": "script",
+
+	// VUE
+	"[vue]": {
+		"editor.defaultFormatter": "Vue.volar"
+	},
+
+	// VITE
+	"vite.browserType": "system",
+	"vite.devCommand": "npm run dev",
+	"vite.port": 3000,
+	"vite.showTerminal": true,
+
+	// MISC
+	"tabnine.experimentalAutoImports": true,
+	"redhat.telemetry.enabled": false,
+	"material-icon-theme.activeIconPack": "vue",
+	"settingsSync.ignoredExtensions": [],
+	"terminal.integrated.env.osx": {},
+	"notebook.formatOnSave.enabled": true,
+	"claudeCode.useTerminal": true,
+	"gitlens.ai.model": "vscode",
+	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
+	"keyboard.touchbar.enabled": false,
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"chat.mcp.autostart": "newAndOutdated",
+
+	"chat.mcp.serverSampling": {
+		"Global in Code: github": {
+			"allowedModels": [
+				"copilot/gpt-4.1",
+				"copilot/claude-3.5-sonnet",
+				"copilot/claude-3.7-sonnet",
+				"copilot/claude-3.7-sonnet-thought",
+				"copilot/claude-sonnet-4",
+				"copilot/gemini-2.0-flash-001",
+				"copilot/gemini-2.5-pro",
+				"copilot/gpt-4o",
+				"copilot/gpt-5",
+				"copilot/gpt-5-mini",
+				"copilot/o3-mini",
+				"copilot/o4-mini"
+			]
+		}
+	},
+	"chat.tools.terminal.autoApprove": {
+		"npx": true,
+		"npm run dev": true,
+		"npm run build": true,
+		"/^node esbuild\\.config\\.mjs production$/": {
+			"approve": true,
+			"matchCommandLine": true
+		},
+		"/^pkill -f esbuild && node esbuild\\.config\\.mjs production$/": {
+			"approve": true,
+			"matchCommandLine": true
+		},
+		"/^sleep 1 && node esbuild\\.config\\.mjs production$/": {
+			"approve": true,
+			"matchCommandLine": true
+		},
+		"killall": true,
+		"/^pkill -9 -f esbuild; sleep 1 && ls -lh main\\.js$/": {
+			"approve": true,
+			"matchCommandLine": true
+		},
+		"awk": true,
+		"pkill": true,
+		"true": true,
+		"pnpm": true,
+		"git rev-parse": true
+	},
+
+	// SPELLCHECKER
+	"cSpell.userWords": [
+		"Behaviour",
+		"browserlist",
+		"cleancache",
+		"gsap",
+		"iconify",
+		"Kieran",
+		"kmcom",
+		"lerp",
+		"mastmain",
+		"nuxi",
+		"nuxiupgrade",
+		"nuxt",
+		"nuxtjs",
+		"nuxtupdate",
+		"oklch",
+		"oxlint",
+		"oxlintrc",
+		"vars",
+		"webgpu",
+		"bluegray",
+		"coolgray",
+		"gsap",
+		"Kieran",
+		"KMCOM",
+		"linebreak",
+		"nuxt",
+		"nuxtjs",
+		"opentype",
+		"tailwindcss",
+		"truegray",
+		"truetype",
+		"warmgray"
+	]
+}

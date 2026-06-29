@@ -1,0 +1,24 @@
+[build]
+  # Use Nuxt’s hybrid build (NOT `nuxt generate`)
+  command = "pnpm run netlify"
+
+# --- Headers ---
+# Cache static assets aggressively
+[[headers]]
+  for = "/_nuxt/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Default cache for pages (overridden by ISR via Nuxt routeRules)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Security headers (optional, tweak as needed)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

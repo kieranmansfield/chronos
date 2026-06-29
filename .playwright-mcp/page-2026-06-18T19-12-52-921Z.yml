@@ -1,0 +1,222 @@
+- generic:
+    - generic:
+        - generic:
+            - main:
+                - generic:
+                    - generic:
+                        - generic:
+                            - navigation:
+                                - list:
+                                    - listitem:
+                                        - link:
+                                            - /url: /
+                                            - text: Home
+                                - list:
+                                    - listitem:
+                                        - link:
+                                            - /url: /contact
+                                            - text: Contact
+                        - generic:
+                            - generic:
+                                - button
+                - generic:
+                    - generic:
+                        - generic:
+                            - generic: kmcom-nuxt-layers
+                            - heading [level=1]: Nuxt Layer Architecture
+                            - paragraph: A production-ready starter template built on composable Nuxt layers. Ship faster with pre-built typography, layout, motion, and form systems.
+                            - generic:
+                                - link:
+                                    - /url: /design-system
+                                    - text: Design System
+                                - link:
+                                    - /url: https://github.com/kieranmansfield/starter-template
+                                    - text: View on GitHub
+                    - generic:
+                        - generic:
+                            - generic:
+                                - generic: Core
+                                - generic: ◆
+                                - generic: UI
+                                - generic: ◆
+                                - generic: Layout
+                                - generic: ◆
+                                - generic: Motion
+                                - generic: ◆
+                                - generic: Forms
+                                - generic: ◆
+                                - generic: Theme
+                                - generic: ◆
+                                - generic: Content
+                                - generic: ◆
+                                - generic: Core
+                                - generic: ◆
+                                - generic: UI
+                                - generic: ◆
+                                - generic: Layout
+                                - generic: ◆
+                                - generic: Motion
+                                - generic: ◆
+                                - generic: Forms
+                                - generic: ◆
+                                - generic: Theme
+                                - generic: ◆
+                                - generic: Content
+                                - generic: ◆
+                    - generic:
+                        - generic:
+                            - generic:
+                                - generic:
+                                    - generic:
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=2]: Core
+                                                    - generic: Active
+                                        - paragraph: Foundation utilities, error handling, device detection, PWA support
+                                        - generic:
+                                            - generic: Browser Detection
+                                            - generic: Screen Info
+                                            - generic: Network Status
+                                            - generic: Feature Detection
+                                            - generic: Loading States
+                                            - generic: PWA Support
+                                - generic:
+                                    - generic:
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=2]: UI
+                                                    - generic: Active
+                                        - paragraph: Typography, colors, responsive media components
+                                        - generic:
+                                            - generic: Typography System
+                                            - generic: Color Tokens
+                                            - generic: Responsive Images
+                                            - generic: Headline Components
+                                            - generic: Code Blocks
+                                - generic:
+                                    - generic:
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=2]: Layout
+                                                    - generic: Active
+                                        - paragraph: Swiss Grid system, sections, and page components
+                                        - generic:
+                                            - generic: 18-Column Grid
+                                            - generic: Hero Section
+                                            - generic: Split Section
+                                            - generic: Gallery Section
+                                            - generic: Page Container
+                                            - generic: Grid Debug
+                                - generic:
+                                    - generic:
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=2]: Motion
+                                                    - generic: Active
+                                        - paragraph: Animations, smooth scrolling, and transition effects
+                                        - generic:
+                                            - generic: GSAP
+                                            - generic: ScrollTrigger
+                                            - generic: Locomotive Scroll v5
+                                            - generic: v-gsap-nuxt
+                                            - generic: TextReveal
+                                            - generic: Parallax
+                                            - generic: Marquee
+                                            - generic: VelocityEffect
+                                            - generic: ScrollProgress
+                                            - generic: HorizontalScroll
+                                            - generic: Staggered
+                                - generic:
+                                    - generic:
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=2]: Forms
+                                                    - generic: Active
+                                        - paragraph: Config-driven form fields with Zod validation
+                                        - generic:
+                                            - generic: Dynamic Fields
+                                            - generic: Zod Validation
+                                            - generic: Type Inference
+                                            - generic: Auto Icons
+                                            - generic: Input Modes
+                                            - generic: Contact Form
+                                - generic:
+                                    - generic:
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=2]: Theme
+                                                    - generic: Active
+                                        - paragraph: Config-driven theme system with Tailwind CSS
+                                        - generic:
+                                            - generic: Dark Mode
+                                            - generic: Accent Colors
+                                            - generic: Color Themes
+                                - generic:
+                                    - generic:
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=2]: Shader
+                                                    - generic: Optional
+                                        - paragraph: WebGL/WebGPU shaders with TSL and TresJS
+                                        - generic:
+                                            - generic: TSL Shaders
+                                            - generic: Noise Functions
+                                            - generic: Gradient Materials
+                                            - generic: Fresnel Effects
+                                            - generic: Post-Processing
+                                            - generic: WebGPU Support
+                                        - generic:
+                                            - button [disabled]: Coming Soon
+                                - generic:
+                                    - generic:
+                                        - generic:
+                                            - generic:
+                                                - generic:
+                                                    - heading [level=2]: Content
+                                                    - generic: Active
+                                        - paragraph: Config-driven content management using Nuxt Content
+                                        - generic:
+                                            - generic: Markdown
+                                            - generic: Content Collections
+                                            - generic: Frontmatter
+                                            - generic: Content API
+                                            - generic: Zod Schemas
+                            - generic:
+                                - link:
+                                    - /url: /design-system
+                                    - text: Design System Reference
+                                - link:
+                                    - /url: https://github.com/kieranmansfield/starter-template
+                                    - text: View Source
+                - generic:
+                    - generic:
+                        - button:
+                            - img
+    - generic:
+        - img
+    - generic:
+        - img
+    - generic [ref=e226]:
+        - button [ref=e240] [cursor=pointer]:
+            - img [ref=e228]
+        - generic [ref=e241]:
+            - generic [ref=e232]: '138'
+            - generic [ref=e233]: ms
+        - button [ref=e242] [cursor=pointer]:
+            - img [ref=e236]
+    - dialog [ref=e243]:
+        - generic [ref=e246]:
+            - button "Close navigation menu" [active] [ref=e247]
+            - generic [ref=e249]:
+                - paragraph [ref=e250]: blah blah blah.
+                - paragraph [ref=e251]: blah blah blah.
+                - paragraph [ref=e252]: blah blah blah.
+                - paragraph [ref=e253]: blah blah blah.
+                - paragraph [ref=e254]: blah blah blah.

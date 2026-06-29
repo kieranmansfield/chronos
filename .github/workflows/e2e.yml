@@ -1,0 +1,36 @@
+name: e2e
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        required: false
+        description: The URL to run tests against. If omitted, uses the latest deployment URL.
+        type: string
+  deployment_status:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.inputs.url || github.event.deployment_status.environment_url }}
+  cancel-in-progress: true
+
+jobs:
+  lighthouse:
+    name: Lighthouse Audit
+    environment:
+      name: ${{ github.event.deployment.environment || 'Production' }}
+      url: ${{ github.event.inputs.url || github.event.deployment_status.environment_url }}
+    if: github.event.deployment_status.state == 'success' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@3e7e23fb74242897f95c0ba9cabad3d0227b9b18 # v12
+        with:
+          urls: ${{ github.event.inputs.url || github.event.deployment_status.environment_url }}
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+          budgetPath: ./apps/web/budget.json
+          runs: 3
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

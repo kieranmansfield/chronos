@@ -1,0 +1,34 @@
+{
+  "name": "chronos",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.8.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "volta": {
+    "node": "24.16.0",
+    "pnpm": "11.7.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @chronos/web run dev",
+    "build": "pnpm --filter @chronos/web run build",
+    "preview": "pnpm --filter @chronos/web run preview",
+    "test": "pnpm --filter @chronos/web run test",
+    "test:e2e": "pnpm --filter @chronos/web run test:e2e",
+    "test:engine": "pnpm --filter @chronos/engine run test",
+    "lint": "pnpm -r run lint",
+    "format": "prettier --config prettier.config.cjs --ignore-path .prettierignore --write .",
+    "format:check": "prettier --config prettier.config.cjs --ignore-path .prettierignore --check .",
+    "typecheck": "pnpm -r run typecheck",
+    "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf {} + && find . -name '.nuxt' -type d -prune -exec rm -rf {} + && find . -name '.output' -type d -prune -exec rm -rf {} + && pnpm store prune && pnpm install",
+    "deps:check": "ncu --format group",
+    "deps:update": "ncu -u && pnpm install",
+    "vscode:sync": "git remote get-url vscode-config 2>/dev/null || git remote add vscode-config https://github.com/kieranmansfield/vscode-config.git && git fetch vscode-config && git checkout vscode-config/main -- .vscode/",
+    "lint:sync": "git remote get-url tooling-config 2>/dev/null || git remote add tooling-config https://github.com/kieranmansfield/tooling-config.git && git fetch tooling-config && git checkout tooling-config/main -- .editorconfig eslint.config.mjs prettier.config.cjs .prettierignore stylelint.config.mjs"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.4"
+  }
+}
